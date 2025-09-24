@@ -1,4 +1,4 @@
-﻿# Tech challenge - kubernetes autoamted infra provision & HPA ###
+# Tech challenge - kubernetes autoamted infra provision & HPA ###
 
 This repository demonstrates the end-to-end automation of infrastructure provisioning and application deployment on Amazon EKS using Terraform and Kubernetes. 
 It includes Terraform configurations to create and manage the underlying AWS infrastructure, Kubernetes manifests to deploy and scale the application with Horizontal Pod Autoscaling (HPA), and a GitHub Actions CI/CD pipeline that automates infrastructure provisioning, container image management, and Kubernetes rollouts.
@@ -32,11 +32,12 @@ It includes Terraform configurations to create and manage the underlying AWS inf
 
  -->I've configured the pipeline to use an "S3 bucket" for remote state storage and a "DynamoDB table" for state locking.
  -->Implemented PDB(Pod desruption Budget) to ensure the high availability. 
+ -->Its possible from my end for live demonstration on AWS environment
  
  
 ## Security
 
- --> Ahered with SOC-1 security practices like storing environment secret credentials like AWS secrets etc., in Github Actions.
+ --> Adhered with SOC-1 security practices like storing environment secret credentials like AWS secrets in secured platform etc., in Github Actions.
  --> when it comes to production scenario the Policy gates can be enforced for branch, environment, and image restrictions before deploys.
 
 ## Below Enhacement can be done (not included in this project)
@@ -93,7 +94,4 @@ repo/
 
 ## HLD Architecture
 
-
-
-
-
+This solution is fully deployable, and I can showcase it through a live demonstration on AWS
