@@ -1,4 +1,4 @@
-# Tech challenge - kubernetes autoamted infra provision & HPA ###
+﻿# Tech challenge - kubernetes autoamted infra provision & HPA ###
 
 This repository demonstrates the end-to-end automation of infrastructure provisioning and application deployment on Amazon EKS using Terraform and Kubernetes. 
 It includes Terraform configurations to create and manage the underlying AWS infrastructure, Kubernetes manifests to deploy and scale the application with Horizontal Pod Autoscaling (HPA), and a GitHub Actions CI/CD pipeline that automates infrastructure provisioning, container image management, and Kubernetes rollouts.
@@ -32,6 +32,12 @@ It includes Terraform configurations to create and manage the underlying AWS inf
 
  -->I've configured the pipeline to use an "S3 bucket" for remote state storage and a "DynamoDB table" for state locking.
  -->Implemented PDB(Pod desruption Budget) to ensure the high availability. 
+ 
+ 
+## Security
+
+ --> Ahered with SOC-1 security practices like storing environment secret credentials like AWS secrets etc., in Github Actions.
+ --> when it comes to production scenario the Policy gates can be enforced for branch, environment, and image restrictions before deploys.
 
 ## Below Enhacement can be done (not included in this project)
 
@@ -74,11 +80,20 @@ repo/
 
 
 
+
 ## References
 
 * [Terraform S3 Backend Documentation](https://developer.hashicorp.com/terraform/language/backend/s3)
 * [AWS: Terraform Backend Best Practices](https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-aws-provider-best-practices/backend.html)
 * [AWS Blog: Managing Terraform State Files in CI/CD](https://aws.amazon.com/blogs/devops/best-practices-for-managing-terraform-state-files-in-aws-ci-cd-pipeline/)
 * \[AWS EKS Best Practices: Probes & Health Checks]\([https://docs.aws.amazon.com/prescriptive-guidance/latest/ha-resiliency-amazon-eks-app](https://docs.aws.amazon.com/prescriptive-guidance/latest/ha-resiliency-amazon-eks-app)
-
 * Some parts of this work were assisted using GitHub Copilot, primarily for boilerplate generation and formatting like terrafrom resource block.
+
+
+
+## HLD Architecture
+
+
+
+
+
