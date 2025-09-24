@@ -4,13 +4,13 @@ provider "aws" {
 
 variable "tf_state_bucket" {
   type        = string
-  default     = "tf-state-kishorebskr-qw-final4"   #  fixed, all lowercase, globally unique
+  default     = "tf-state-kishorebskr-qw-final4"  
   description = "S3 bucket name for Terraform remote state"
 }
 
 variable "tf_lock_table" {
   type        = string
-  default     = "tf-state-locks-kishorebskr-qw-final4"   #  fixed lock table name
+  default     = "tf-state-locks-kishorebskr-qw-final4"  
   description = "DynamoDB table name for Terraform state locking"
 }
 
