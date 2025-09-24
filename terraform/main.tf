@@ -52,7 +52,7 @@ module "eks" {
   cluster_enabled_log_types   = []
   create_cloudwatch_log_group = false
 
-  cluster_endpoint_public_access       = true   # allow CI/CD to reach it
+  cluster_endpoint_public_access       = true  
   cluster_endpoint_private_access      = true
   cluster_endpoint_public_access_cidrs = ["0.0.0.0/0"]
 
