@@ -30,20 +30,20 @@ It includes Terraform configurations to create and manage the underlying AWS inf
 
 ## Highlights
 
- -->I've configured the pipeline to use an "S3 bucket" for remote state storage and a "DynamoDB table" for state locking.
- -->Implemented PDB(Pod desruption Budget) to ensure the high availability. 
- -->Its possible from my end for live demonstration on AWS environment
+  * I've configured the pipeline to use an "S3 bucket" for remote state storage and a "DynamoDB table" for state locking.
+  * Implemented PDB(Pod desruption Budget) to ensure the high availability. 
+  * Its possible from my end for live demonstration on AWS environment
  
  
 ## Security
 
- --> Adhered with SOC-1 security practices like storing environment secret credentials like AWS secrets in secured platform etc., in Github Actions.
- --> when it comes to production scenario the Policy gates can be enforced for branch, environment, and image restrictions before deploys.
+  * Adhered with SOC-1 security practices like storing environment secret credentials like AWS secrets in secured platform etc., in Github Actions.
+  * when it comes to production scenario the Policy gates can be enforced for branch, environment, and image restrictions before deploys.
 
 ## Below Enhacement can be done (not included in this project)
 
- -->I can setup the readiness/liveliness probe to ensure the pod health.
- --> And also i would implement "OIDC authentication" for GitHub Actions instead of long-lived AWS credentials for the fine grained authentication.
+  * I can setup the readiness/liveliness probe to ensure the pod health.
+  * And also i would implement "OIDC authentication" for GitHub Actions instead of long-lived AWS credentials for the fine grained authentication.
 
 
 ## CI/CD Pipeline
@@ -94,5 +94,5 @@ repo/
 
 ## HLD Architecture
 
-This solution is fully deployable, and I can showcase it through a live demonstration on AWS
-In addition to this, the HLD diagram has been attached to this repo with the name "HLD_QW"
+*This solution is fully deployable, and I can showcase it through a live demonstration on AWS.
+*In addition to this, the HLD diagram has been attached to this repo with the name "HLD_QW"
