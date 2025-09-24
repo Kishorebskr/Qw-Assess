@@ -95,3 +95,4 @@ repo/
 ## HLD Architecture
 
 This solution is fully deployable, and I can showcase it through a live demonstration on AWS
+In addition to this, the HLD diagram has been attached to this repo with the name "HLD_QW"
